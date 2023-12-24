@@ -1,0 +1,79 @@
+// =================== start header ===========
+.header_component {
+  .item {
+    position: relative;
+    min-height: 400px;
+    width: 100%;
+
+    .image {
+      position: absolute;
+      z-index: -1;
+      width: 100%;
+      height: 100%;
+
+      img {
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .content {
+      @include centering;
+      flex-direction: column;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      h1 {
+        color: $defaultColor;
+        font-size: 56px;
+        font-style: normal;
+        font-weight: 700;
+      }
+
+      p {
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        color: $defaultColor;
+      }
+
+      button {
+        margin-top: 50px;
+        color: $defaultColor;
+        background: $mainBackGroundColor;
+
+        &:hover,
+        &:focus {
+          color: $mainBackGroundColor;
+          box-shadow: inset -9em 0 0 0 #fff, inset 9em 0 0 0 #fff;
+        }
+      }
+    }
+  }
+
+  .owl-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+
+    button {
+      width: unset;
+
+      span {
+        width: 10px;
+        height: 10px;
+        transform: rotate(45deg);
+        border-radius: unset !important;
+      }
+      &.owl-dot.active {
+        span {
+          background: $mainBackGroundColor;
+        }
+      }
+    }
+  }
+}
+// =================== end header =============

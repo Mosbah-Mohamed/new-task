@@ -1,0 +1,70 @@
+// ============ style en ===========
+html[lang="en-US"] body {
+  direction: ltr;
+  text-align: left;
+
+  header .staticis {
+    right: 0;
+    left: auto;
+    border-radius: 141px 0 0 0;
+  }
+
+  .courses_content_before_subscribe .all_info .image_video .video {
+    left: 50%;
+    right: unset;
+  }
+
+  .eye {
+    left: auto;
+    right: 20px;
+  }
+
+  .courses_component .card_content {
+    .appoint {
+      justify-content: flex-end;
+
+      .calender {
+        flex-direction: row-reverse;
+      }
+    }
+    .course_link a {
+      flex-direction: row-reverse;
+
+      svg {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  .image_video .video {
+    left: auto;
+    right: 65px;
+  }
+
+  .second_layout .crumb ul li svg,
+  .profile_side_component
+    .profile_content
+    .my-courses
+    .boxes
+    .box
+    .all_course_detail
+    .course_detail
+    .info
+    .course_link
+    a
+    svg {
+    transform: rotate(180deg);
+  }
+
+  .has-search .icon_sea {
+    left: auto;
+    right: 20px;
+  }
+
+  .courses_component .card_content .trainer_desc {
+    flex-direction: row-reverse;
+    // justify-content: flex-end;
+  }
+}
+
+// ============ style en ===========

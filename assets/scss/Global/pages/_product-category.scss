@@ -1,0 +1,520 @@
+// ======================== start product category =============
+
+.products_component {
+  .item {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+
+    .image {
+      width: 88px;
+      height: 88px;
+    }
+
+    span {
+      font-weight: 600;
+    }
+  }
+
+  .owl-carousel .owl-nav.disabled {
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    div {
+      background: transparent;
+      color: $DefaultBackGroundColor;
+      font-size: 35px;
+    }
+  }
+
+  &.sub_cat {
+    .owl-carousel .owl-nav.disabled {
+      display: block;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+
+      .owl-prev {
+        top: 50%;
+        transform: translateY(-50%);
+        position: absolute;
+        left: -30px;
+      }
+      .owl-next {
+        top: 50%;
+        transform: translateY(-50%);
+        position: absolute;
+        right: -30px;
+      }
+
+      div {
+        background: transparent;
+        color: $DefaultBackGroundColor;
+        font-size: 35px;
+      }
+    }
+  }
+}
+
+// ======================== end product category =============
+
+// ======================== start gift card =============
+.gift_component {
+  margin: 50px 0 40px;
+  .all_content {
+    background: #d5f07d;
+    max-height: 432px;
+    overflow: hidden;
+  }
+
+  .images {
+    position: relative;
+    height: 100%;
+    .red_gift {
+      position: absolute;
+      bottom: 0;
+      left: 30%;
+    }
+    .green_gift {
+      position: absolute;
+      right: 0;
+      top: 50px;
+    }
+    .yellow_gift {
+    }
+  }
+
+  .content {
+    margin: 124px 0 32px 65px;
+
+    h2 {
+      color: #070706;
+      font-size: 40px;
+      margin-bottom: 24px;
+      font-weight: 700;
+    }
+    button {
+      margin-bottom: 64px;
+      margin-inline-end: auto;
+    }
+    p {
+      font-size: 14px;
+      font-weight: 400;
+    }
+  }
+}
+// ======================== end gift card =============
+
+// ======================== start shop_now_component =============
+.shop_now_component {
+  margin: 40px 0;
+  .all_content {
+    overflow: hidden;
+    background: $DefaultBackGroundColor;
+    padding: 70px;
+
+    .content {
+      text-align: center;
+
+      .clock {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+
+        .divide {
+          color: $defaultColor;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 600;
+          margin: 0 15px;
+        }
+        .hours {
+          .time {
+            span {
+              background: $mainBackGroundColor;
+              font-size: 56px;
+              font-style: normal;
+              font-weight: 700;
+              padding: 6px 15px;
+              position: relative;
+
+              &:after {
+                position: absolute;
+                right: 0;
+                left: 0;
+                bottom: 0;
+                content: "";
+                border-radius: 0px 0px 4px 4px;
+                background: rgba(0, 0, 0, 0.08);
+                width: 100%;
+                height: 40px;
+              }
+            }
+          }
+
+          span {
+            color: #f9f9f9;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+          }
+        }
+      }
+
+      h2 {
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 700;
+        color: $mainBackGroundColor;
+        margin-bottom: 8px;
+      }
+      p {
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        color: $defaultColor;
+      }
+      button {
+        background: $mainBackGroundColor;
+        margin: 37px auto 0;
+      }
+    }
+  }
+}
+// ======================== end shop_now_component =============
+
+// ======================== start cashback_component ===========
+.cashback_component {
+  margin: 30px 0;
+
+  .all_content {
+    background-image: url(./assets/images/banner_1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 220px;
+
+    .info {
+      padding: 41px 48px 0;
+      p {
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        color: $defaultColor;
+      }
+      button {
+        color: $mainBackGroundColor;
+        border: 1px solid $mainBackGroundColor;
+        background: $defaultColor;
+        margin-top: 16px;
+
+        &:hover {
+          color: $defaultColor;
+          box-shadow: inset -9em 0 0 0 $mainBackGroundColor,
+            inset 9em 0 0 0 $mainBackGroundColor;
+        }
+      }
+    }
+  }
+}
+// ======================== end cashback_component =============
+
+// ======================== start offer_component =============
+.offer_component {
+  margin: 0 0 30px;
+  .fruits {
+    height: 100%;
+    position: relative;
+
+    img {
+      width: 100%;
+    }
+
+    .info {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      text-align: center;
+
+      h2 {
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 700;
+      }
+
+      button {
+        margin: auto;
+        color: $defaultColor;
+        background: $mainBackGroundColor;
+
+        &:hover,
+        &:focus {
+          color: $mainBackGroundColor;
+          border: 1px solid $mainBackGroundColor;
+          box-shadow: inset -9em 0 0 0 #fff, inset 9em 0 0 0 #fff;
+        }
+      }
+    }
+  }
+
+  .cart_shop {
+    background: #a092e0;
+    height: 100%;
+    min-height: 320px;
+    position: relative;
+
+    .info {
+      z-index: 2;
+      position: absolute;
+      top: 50%;
+      transform: translate(0, -50%);
+      padding-inline-start: 40px;
+      h2 {
+        color: $defaultColor;
+        font-size: 32px;
+        font-weight: 700;
+      }
+    }
+
+    img {
+      position: absolute;
+      right: 0;
+      top: 50px;
+      z-index: 1;
+    }
+
+    button {
+      margin: auto;
+      color: $mainBackGroundColor;
+      border: 1px solid $mainBackGroundColor;
+      background: $defaultColor;
+      margin-inline-start: inherit;
+
+      &:hover,
+      &:focus {
+        color: $defaultColor;
+        border: 1px solid $mainBackGroundColor;
+        box-shadow: inset -9em 0 0 0 $mainBackGroundColor,
+          inset 9em 0 0 0 $mainBackGroundColor;
+      }
+    }
+  }
+}
+// ======================== end offer_component =============
+
+// ======================== start products_component ===========
+.products_component {
+  &.main_product {
+    margin-bottom: 25px;
+    h3 {
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 700;
+      color: #070706;
+      margin-bottom: 24px;
+    }
+
+    .item {
+      gap: unset;
+      .head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 10px;
+
+        .fav {
+          img {
+            width: 32px;
+            height: 32px;
+          }
+        }
+
+        .deal {
+          border-radius: 0px 0px 6px 0px;
+          background: #ff8540;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 4px 8px;
+
+          img {
+            width: 20px;
+            height: 20px;
+          }
+
+          span {
+            font-weight: 600;
+            color: $defaultColor;
+          }
+        }
+      }
+
+      .image {
+        width: 100%;
+        height: 100%;
+        padding-bottom: 20px;
+        padding-top: 8px;
+        background: #fff;
+
+        img {
+          // height: 220px;
+        }
+      }
+
+      .counter {
+        margin: 12px 0;
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
+        .plus {
+          display: block;
+          border-radius: 4px 8px 8px 4px;
+          width: 40px;
+          height: 40px;
+          color: $defaultColor;
+          background: $DefaultBackGroundColor;
+          @include centering;
+        }
+      }
+
+      .rate {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 12px;
+        gap: 12px;
+        width: 100%;
+
+        .stars {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 4px;
+        }
+
+        .gold_price {
+          background: #f7de6f;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 4px 8px;
+
+          p {
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 600;
+          }
+
+          img {
+            width: 16px;
+            height: 16px;
+          }
+        }
+      }
+
+      .desc {
+        width: 100%;
+        .price {
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 700;
+        }
+
+        p {
+          color: #070706;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+        }
+      }
+    }
+
+    .owl-carousel {
+      .owl-nav.disabled {
+        top: -40px;
+        right: 0;
+        width: unset;
+        margin-top: 13px;
+
+        div {
+          border: 1px solid rgba(0, 169, 162, 1);
+          color: rgba(0, 169, 162, 1);
+          background: transparent;
+          width: 24px;
+          height: 24px;
+          font-size: 20px;
+          @include centering;
+        }
+      }
+    }
+  }
+}
+// ======================== end products_component ========
+
+// ======================== start week offer =============
+
+.week_offer_component {
+  margin-bottom: 70px;
+  h3 {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    color: #070706;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .item {
+    .image {
+      // position: absolute;
+      // width: 100%;
+    }
+
+    .cart_shop {
+      position: absolute;
+      z-index: 2;
+      top: 56%;
+      transform: translateY(-50%);
+      padding-inline-start: 40px;
+
+      .info {
+        h4 {
+          font-size: 32px;
+          font-style: normal;
+          font-weight: 700;
+        }
+        p {
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 400;
+        }
+        button {
+          margin-top: 16px;
+        }
+      }
+    }
+  }
+
+  .owl-carousel {
+    .owl-nav.disabled {
+      display: block;
+
+      div {
+        background: transparent;
+        color: $DefaultBackGroundColor;
+        font-size: 30px;
+      }
+    }
+  }
+}
+
+// ======================== end week offer =============

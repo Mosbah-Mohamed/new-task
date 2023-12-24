@@ -1,0 +1,45 @@
+// start call sass pages
+
+@import "./Global/helpers/_variables.scss";
+
+@import "./Global/helpers/_mixins.scss";
+
+@import "./Global/layout/_grid.scss";
+
+@import "./Global/components/_buttons.scss";
+
+@import "./Global/components/_heading.scss";
+
+@import "./Global/layout/_globalPages.scss";
+
+@import "./Global/layout/_style-en.scss";
+
+// start layouts
+
+@import "./Global/layout/_navbar.scss";
+
+@import "./Global/layout/header.scss";
+
+@import "./Global/layout/footer.scss";
+
+// end layouts
+
+// start global components
+
+@import "./Global/components/_up-button.scss";
+
+// end global components
+
+// start pages
+
+@import "./Global/pages/product-category"; // start pages
+// start Auth
+// end Auth
+//  global pages
+@import "./Global/pages/errorpage";
+
+@import "./Global/layout/_media.scss";
+
+//  global pages
+
+// end call sass pages

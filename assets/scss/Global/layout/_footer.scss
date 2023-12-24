@@ -1,0 +1,121 @@
+// ================ start footer ==================
+.footer_component {
+  background: #272727;
+  padding: 24px 0 0;
+  .lang {
+    margin-bottom: 18px;
+    span {
+      color: rgba($color: #fff, $alpha: 0.5);
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 600;
+
+      &.active {
+        color: $defaultColor;
+      }
+    }
+  }
+
+  .payment {
+    p {
+      font-size: 12px;
+      white-space: nowrap;
+      color: rgba($color: #fff, $alpha: 0.5);
+    }
+    .images {
+    }
+  }
+
+  .links {
+    h3 {
+      font-size: 13px;
+      font-style: normal;
+      font-weight: 700;
+      margin-bottom: 13px;
+      color: rgba($color: #fff, $alpha: 0.5);
+    }
+    ul {
+      li {
+        a {
+          color: $defaultColor;
+          font-size: 15px;
+          font-style: normal;
+          font-weight: 500;
+          display: block;
+          margin-bottom: 16px;
+        }
+
+        &:hover {
+          a {
+            color: $mainBackGroundColor;
+          }
+        }
+      }
+    }
+  }
+
+  .content {
+    .logo {
+      margin-bottom: 27px;
+      img {
+        max-width: 174px;
+      }
+    }
+
+    .social {
+      span {
+        color: rgba($color: #fff, $alpha: 0.5);
+      }
+
+      .icons {
+        display: flex;
+        margin-top: 8px;
+        gap: 16px;
+        margin-bottom: 31px;
+        img {
+          width: 24px;
+          height: 24px;
+        }
+      }
+
+      .whatsapp {
+        display: flex;
+        gap: 8px;
+
+        span {
+          color: $defaultColor;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 600;
+        }
+        img {
+        }
+      }
+    }
+  }
+
+  .last_footer {
+    margin-top: 24px;
+    padding: 20px 0;
+    border-top: 1px solid #555;
+
+    .images_downloaded {
+      display: flex;
+      justify-content: flex-end;
+      gap: 16px;
+
+      img {
+        max-width: 131px;
+        height: 38px;
+      }
+    }
+
+    .support {
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      color: $defaultColor;
+    }
+  }
+}
+// ================ end footer ====================

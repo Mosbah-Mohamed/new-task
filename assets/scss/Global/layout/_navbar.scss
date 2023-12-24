@@ -1,0 +1,217 @@
+//========== start navbar =========
+.navbar_component {
+  margin-bottom: 16px;
+
+  .search {
+    @include centering;
+    border: 1px solid #b0b0b0;
+    border-radius: 8px 20px 20px 8px;
+    padding: 12px;
+    gap: 9px;
+    width: 100%;
+    input {
+      padding: unset;
+      height: unset;
+      &:focus {
+        border: none;
+        outline: none;
+      }
+    }
+  }
+
+  hr {
+    margin: 0;
+    background: #f2f2f2;
+  }
+
+  .top_nav {
+    padding: 16px 0;
+    .delivery {
+      display: flex;
+      gap: 17px;
+
+      .cashback {
+        @include centering;
+        gap: 5px;
+        p {
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 600;
+          color: #070706;
+        }
+        img {
+          width: 22px;
+          height: 22px;
+        }
+      }
+    }
+
+    .settings {
+      @include centering;
+      justify-content: flex-end;
+      gap: 34px;
+
+      .lang {
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        color: #070706;
+      }
+
+      .whatsapp {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+      }
+    }
+  }
+
+  .middle_nav {
+    padding-top: 8px;
+    .row {
+      align-items: center;
+    }
+    .logo_side {
+      @include centering;
+      justify-content: flex-start;
+      gap: 24px;
+    }
+    .logo {
+      img {
+        max-width: 150px;
+      }
+    }
+
+    .search {
+      @include centering;
+      border: 1px solid #b0b0b0;
+      border-radius: 8px 20px 20px 8px;
+      padding: 12px;
+      gap: 9px;
+      width: 100%;
+      input {
+        padding: unset;
+        height: unset;
+        &:focus {
+          border: none;
+          outline: none;
+        }
+      }
+    }
+
+    .location {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+
+      .info {
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+      }
+      .change {
+        a {
+          color: #ff4300;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 600;
+          text-decoration: underline;
+        }
+      }
+    }
+
+    .icons {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 24px;
+      ul {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 24px;
+        li {
+          img {
+            min-width: 24px;
+            height: 24px;
+          }
+        }
+      }
+
+      .pay_cash {
+        background: #f7de6f;
+        padding: 3px 20px;
+        span {
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 400;
+        }
+        .price {
+          span {
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+
+  .nav_bottom {
+    padding: 15px 0;
+    .nav_links {
+      ul {
+        display: flex;
+        gap: 24px;
+        li {
+          a {
+            color: $mainColor;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 600;
+            transition: 0.5s;
+
+            &:hover {
+              color: $mainBackGroundColor;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .responsive_nav {
+    display: none;
+    background: $DefaultBackGroundColor;
+    padding: 20px 5px;
+
+    .search {
+      background: $defaultColor;
+    }
+
+    .nav_bottom,
+    .nav_top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      gap: 20px;
+
+      .icon {
+        img {
+          filter: invert(1);
+        }
+      }
+
+      .logo {
+        display: flex;
+        gap: 10px;
+
+        img {
+        }
+      }
+    }
+  }
+}
+//========== end navbar ===========

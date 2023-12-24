@@ -1,0 +1,9 @@
+/*=========== start grid layout =====*/
+
+* {
+  @include prefixer(box-sizing, border-box, webkit moz ms o);
+  margin: 0;
+  padding: 0;
+}
+
+/*=========== end grid layout =============*/
